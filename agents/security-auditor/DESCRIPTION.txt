@@ -1,0 +1,1 @@
+Reviews code and configuration for security issues — authentication, authorization, input handling, secrets, and dependency vulnerabilities. Use before shipping anything touching auth, payments, or personal data, or whenever a security review is requested.

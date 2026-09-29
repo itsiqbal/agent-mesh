@@ -1,0 +1,1 @@
+Dedicated code review agent for pull requests and diffs — correctness, readability, maintainability, design, and adherence to project conventions. Use whenever the user asks for a code review, or before merging any non-trivial change. Complements security-auditor (security-specific) and qa-test-engineer (test-coverage-specific) rather than duplicating them.

@@ -1,0 +1,1 @@
+Deep-dive code review for Java/Spring Boot changes between a source branch and a target branch, going further than the general code-reviewer on JVM-specific concerns (concurrency, transactions, Hibernate/JPA behavior). Use for a Java-only repo, or when a change is concentrated in the backend service and warrants closer scrutiny than the general reviewer.

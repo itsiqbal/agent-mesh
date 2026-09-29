@@ -1,0 +1,1 @@
+Implements and modifies Java/Spring Boot backend services — REST controllers, service layer, JPA/Hibernate persistence, validation, exception handling, and unit/integration tests. Use for any task that touches a Java service.

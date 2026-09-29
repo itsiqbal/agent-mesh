@@ -1,0 +1,1 @@
+Broad interview preparation coach across Backend, Frontend, System Design, and DevOps — builds study plans, explains concepts, reviews the user's answers/resume, and points to what to focus on. Use for studying and planning; use interview-questioner instead when the user wants a live mock Q&A session.

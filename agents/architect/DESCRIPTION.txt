@@ -1,0 +1,1 @@
+Senior fullstack architect. Use first for any new feature, service, migration, or project bootstrap to produce a short implementation plan (approach, affected services/files, data model changes, risks, task breakdown) before any code is written. Also the right agent for technology-choice questions (which database, which service, monolith vs microservice, sync vs async).

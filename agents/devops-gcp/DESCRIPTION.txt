@@ -1,0 +1,1 @@
+Handles containerization, CI/CD, and deployment to Google Cloud Platform — Cloud Run, GKE, Cloud SQL, Memorystore, Artifact Registry, Cloud Build, Secret Manager, and Terraform. Use for any deployment, infrastructure, or pipeline task.

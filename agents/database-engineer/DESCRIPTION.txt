@@ -1,0 +1,1 @@
+Designs and reviews schema/migrations across MySQL, PostgreSQL, MongoDB, and Redis, and advises on which datastore fits a given piece of data. Use for schema design, migrations, indexing, and query-performance questions.

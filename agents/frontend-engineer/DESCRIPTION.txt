@@ -1,0 +1,1 @@
+Implements and modifies the Next.js/React frontend — pages, components, data fetching, forms, and tests. Use for any task that touches the frontend UI or client-side logic.

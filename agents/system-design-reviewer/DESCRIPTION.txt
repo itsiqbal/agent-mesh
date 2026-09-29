@@ -1,0 +1,1 @@
+Reviews system design proposals, architecture docs, and RFCs for scalability, reliability, consistency, and trade-offs. Use when reviewing a design doc, an architecture proposal, or the architect agent's own implementation plan for a large feature.

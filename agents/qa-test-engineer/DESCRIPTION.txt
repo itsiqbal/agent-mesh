@@ -1,0 +1,1 @@
+Writes and runs tests, checks coverage, and confirms a change is safe to ship. Use before marking any non-trivial task done, or when asked to add or improve tests.

@@ -1,0 +1,1 @@
+Focused code review for Next.js/React/TypeScript frontend changes between a source branch and a target branch — component design, rendering behavior, and accessibility. Use for a frontend-only repo, or when a change is concentrated in the UI and warrants closer scrutiny than the general reviewer.
