@@ -1,0 +1,3 @@
+# Invoke explicitly with $new-feature.
+policy:
+  allow_implicit_invocation: false

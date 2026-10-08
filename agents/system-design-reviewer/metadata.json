@@ -1,0 +1,15 @@
+{
+  "skills": [
+    "system-design-review-checklist",
+    "gcp-deployment",
+    "relational-schema-design",
+    "mongodb-schema-design",
+    "redis-caching-patterns"
+  ],
+  "read_only": true,
+  "legacy_templates": {
+    "claude-code": "---\nname: system-design-reviewer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash\nmodel: opus\nskills: [system-design-review-checklist, gcp-deployment, relational-schema-design, mongodb-schema-design, redis-caching-patterns]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\npermission:\n  edit: deny\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: system-design-reviewer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: pro\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/system-design-review-checklist\n  - skills/gcp-deployment\n  - skills/relational-schema-design\n  - skills/mongodb-schema-design\n  - skills/redis-caching-patterns\n---\n{{PROMPT}}"
+  }
+}

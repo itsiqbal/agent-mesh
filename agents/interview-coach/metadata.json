@@ -1,0 +1,14 @@
+{
+  "skills": [
+    "interview-prep-backend",
+    "interview-prep-frontend",
+    "interview-prep-system-design",
+    "interview-prep-devops"
+  ],
+  "read_only": true,
+  "legacy_templates": {
+    "claude-code": "---\nname: interview-coach\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash\nmodel: inherit\nskills: [interview-prep-backend, interview-prep-frontend, interview-prep-system-design, interview-prep-devops]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\npermission:\n  edit: deny\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: interview-coach\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\nmainAgent: true\nsubagent: true\nmodel: inherit\ncommandExecutionPolicy: off\nskills:\n  - skills/interview-prep-backend\n  - skills/interview-prep-frontend\n  - skills/interview-prep-system-design\n  - skills/interview-prep-devops\n---\n{{PROMPT}}"
+  }
+}

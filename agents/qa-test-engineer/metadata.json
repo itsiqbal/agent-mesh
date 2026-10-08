@@ -1,0 +1,11 @@
+{
+  "skills": [
+    "testing-strategy"
+  ],
+  "read_only": false,
+  "legacy_templates": {
+    "claude-code": "---\nname: qa-test-engineer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash, Edit, Write\nmodel: inherit\nskills: [testing-strategy]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: subagent\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: qa-test-engineer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - replace_file_content\n  - grep_search\n  - run_command\nmainAgent: false\nsubagent: true\nmodel: inherit\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/testing-strategy\n---\n{{PROMPT}}"
+  }
+}

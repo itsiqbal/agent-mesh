@@ -1,0 +1,12 @@
+{
+  "skills": [
+    "nextjs-react-conventions",
+    "testing-strategy"
+  ],
+  "read_only": false,
+  "legacy_templates": {
+    "claude-code": "---\nname: frontend-engineer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash, Edit, Write\nmodel: inherit\nskills: [nextjs-react-conventions, testing-strategy]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: frontend-engineer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - replace_file_content\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: inherit\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/nextjs-react-conventions\n  - skills/testing-strategy\n---\n{{PROMPT}}"
+  }
+}

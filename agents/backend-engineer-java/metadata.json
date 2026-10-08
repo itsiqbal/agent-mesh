@@ -1,0 +1,14 @@
+{
+  "skills": [
+    "spring-boot-api-conventions",
+    "relational-schema-design",
+    "testing-strategy",
+    "rest-api-design"
+  ],
+  "read_only": false,
+  "legacy_templates": {
+    "claude-code": "---\nname: backend-engineer-java\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash, Edit, Write\nmodel: inherit\nskills: [spring-boot-api-conventions, relational-schema-design, testing-strategy, rest-api-design]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: backend-engineer-java\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - replace_file_content\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: inherit\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/spring-boot-api-conventions\n  - skills/relational-schema-design\n  - skills/testing-strategy\n  - skills/rest-api-design\n---\n{{PROMPT}}"
+  }
+}

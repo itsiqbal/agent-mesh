@@ -1,0 +1,8 @@
+{
+  "description": "Review a system design document or architecture proposal.",
+  "legacy_templates": {
+    "claude-code": "---\ndescription: Review a system design document or architecture proposal.\n---\n\n{{BODY}}",
+    "opencode": "---\ndescription: Review a system design document or architecture proposal.\n---\n\n{{BODY}}",
+    "antigravity": "{{BODY}}"
+  }
+}

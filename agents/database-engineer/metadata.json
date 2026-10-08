@@ -1,0 +1,13 @@
+{
+  "skills": [
+    "relational-schema-design",
+    "mongodb-schema-design",
+    "redis-caching-patterns"
+  ],
+  "read_only": false,
+  "legacy_templates": {
+    "claude-code": "---\nname: database-engineer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash, Edit, Write\nmodel: opus\nskills: [relational-schema-design, mongodb-schema-design, redis-caching-patterns]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: database-engineer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - replace_file_content\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: pro\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/relational-schema-design\n  - skills/mongodb-schema-design\n  - skills/redis-caching-patterns\n---\n{{PROMPT}}"
+  }
+}

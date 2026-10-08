@@ -1,0 +1,8 @@
+{
+  "description": "Review the current uncommitted changes (or a specified PR/branch) for correctness, style, and risk.",
+  "legacy_templates": {
+    "claude-code": "---\ndescription: Review the current uncommitted changes (or a specified PR/branch) for correctness, style, and risk.\n---\n\n{{BODY}}",
+    "opencode": "---\ndescription: Review the current uncommitted changes (or a specified PR/branch) for correctness, style, and risk.\n---\n\n{{BODY}}",
+    "antigravity": "{{BODY}}"
+  }
+}

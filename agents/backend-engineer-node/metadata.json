@@ -1,0 +1,16 @@
+{
+  "skills": [
+    "node-express-api-conventions",
+    "relational-schema-design",
+    "mongodb-schema-design",
+    "redis-caching-patterns",
+    "testing-strategy",
+    "rest-api-design"
+  ],
+  "read_only": false,
+  "legacy_templates": {
+    "claude-code": "---\nname: backend-engineer-node\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash, Edit, Write\nmodel: inherit\nskills: [node-express-api-conventions, relational-schema-design, mongodb-schema-design, redis-caching-patterns, testing-strategy, rest-api-design]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: backend-engineer-node\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - replace_file_content\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: inherit\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/node-express-api-conventions\n  - skills/relational-schema-design\n  - skills/mongodb-schema-design\n  - skills/redis-caching-patterns\n  - skills/testing-strategy\n  - skills/rest-api-design\n---\n{{PROMPT}}"
+  }
+}

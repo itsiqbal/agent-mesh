@@ -1,0 +1,8 @@
+{
+  "description": "Build a study plan and drill concepts for an upcoming interview (as opposed to /mock-interview, which runs a live Q&A session).",
+  "legacy_templates": {
+    "claude-code": "---\ndescription: Build a study plan and drill concepts for an upcoming interview (as opposed to /mock-interview, which runs a live Q&A session).\n---\n\n{{BODY}}",
+    "opencode": "---\ndescription: Build a study plan and drill concepts for an upcoming interview (as opposed to /mock-interview, which runs a live Q&A session).\n---\n\n{{BODY}}",
+    "antigravity": "{{BODY}}"
+  }
+}

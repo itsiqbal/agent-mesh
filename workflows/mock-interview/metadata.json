@@ -1,0 +1,8 @@
+{
+  "description": "Run a live mock technical interview session.",
+  "legacy_templates": {
+    "claude-code": "---\ndescription: Run a live mock technical interview session.\n---\n\n{{BODY}}",
+    "opencode": "---\ndescription: Run a live mock technical interview session.\n---\n\n{{BODY}}",
+    "antigravity": "{{BODY}}"
+  }
+}

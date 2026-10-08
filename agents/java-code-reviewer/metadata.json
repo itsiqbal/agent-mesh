@@ -1,0 +1,12 @@
+{
+  "skills": [
+    "spring-boot-api-conventions",
+    "testing-strategy"
+  ],
+  "read_only": true,
+  "legacy_templates": {
+    "claude-code": "---\nname: java-code-reviewer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash\nmodel: inherit\nskills: [spring-boot-api-conventions, testing-strategy]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: subagent\npermission:\n  edit: deny\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: java-code-reviewer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - grep_search\nmainAgent: true\nsubagent: true\nmodel: pro\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/spring-boot-api-conventions\n  - skills/testing-strategy\n---\n\n{{PROMPT}}"
+  }
+}

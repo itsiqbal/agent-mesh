@@ -1,0 +1,3 @@
+# Invoke explicitly with $interview-prep.
+policy:
+  allow_implicit_invocation: false

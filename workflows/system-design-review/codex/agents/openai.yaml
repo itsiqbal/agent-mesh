@@ -1,0 +1,3 @@
+# Invoke explicitly with $system-design-review.
+policy:
+  allow_implicit_invocation: false

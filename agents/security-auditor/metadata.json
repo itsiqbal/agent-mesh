@@ -1,0 +1,11 @@
+{
+  "skills": [
+    "security-review-checklist"
+  ],
+  "read_only": true,
+  "legacy_templates": {
+    "claude-code": "---\nname: security-auditor\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash\nmodel: opus\nskills: [security-review-checklist]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: subagent\npermission:\n  edit: deny\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: security-auditor\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - grep_search\n  - run_command\nmainAgent: false\nsubagent: true\nmodel: pro\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/security-review-checklist\n---\n{{PROMPT}}"
+  }
+}

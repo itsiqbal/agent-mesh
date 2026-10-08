@@ -1,0 +1,8 @@
+{
+  "description": "A repeatable flow for building a new feature end-to-end.",
+  "legacy_templates": {
+    "claude-code": "---\ndescription: A repeatable flow for building a new feature end-to-end.\n---\n\n{{BODY}}",
+    "opencode": "---\ndescription: A repeatable flow for building a new feature end-to-end.\n---\n\n{{BODY}}",
+    "antigravity": "{{BODY}}"
+  }
+}

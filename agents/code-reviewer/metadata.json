@@ -1,0 +1,15 @@
+{
+  "skills": [
+    "code-review-checklist",
+    "spring-boot-api-conventions",
+    "node-express-api-conventions",
+    "nextjs-react-conventions",
+    "rest-api-design"
+  ],
+  "read_only": true,
+  "legacy_templates": {
+    "claude-code": "---\nname: code-reviewer\ndescription: {{DESCRIPTION}}\ntools: Read, Grep, Glob, Bash\nmodel: opus\nskills: [code-review-checklist, spring-boot-api-conventions, node-express-api-conventions, nextjs-react-conventions, rest-api-design]\n---\n\n{{PROMPT}}",
+    "opencode": "---\ndescription: {{DESCRIPTION}}\nmode: all\npermission:\n  edit: deny\n---\n\n{{PROMPT}}",
+    "antigravity": "---\nname: code-reviewer\ndescription: {{DESCRIPTION}}\ntools:\n  - view_file\n  - grep_search\n  - run_command\nmainAgent: true\nsubagent: true\nmodel: pro\ncommandExecutionPolicy: sandbox\nskills:\n  - skills/code-review-checklist\n  - skills/spring-boot-api-conventions\n  - skills/node-express-api-conventions\n  - skills/nextjs-react-conventions\n  - skills/rest-api-design\n---\n{{PROMPT}}"
+  }
+}

@@ -1,9 +1,9 @@
 # Global Engineering Rules
 
-These are read automatically by every tool this kit installs for: opencode and Claude Code
-read this file directly (as `AGENTS.md`, at your project root or your global config
-directory); Antigravity reads the same content from its own `GEMINI.md` slot. One file,
-edited once, reaches all three.
+These rules are installed into each tool's global instructions: `CLAUDE.md` for
+Claude Code, `GEMINI.md` for Antigravity, and `AGENTS.md` for opencode and Codex.
+Codex also reads this file directly at the project root. One shared source reaches
+all four tools; project instructions take precedence over global defaults.
 
 ## Stack
 - Backend services: Java 21 + Spring Boot (core domain services), Node.js + TypeScript + Express/NestJS (BFFs, lightweight/glue services)
@@ -22,7 +22,7 @@ edited once, reaches all three.
 These are for your own learning, separate from any production codebase:
 - `interview-coach` — study plans, concept explanations, resume/answer review, for Backend, Frontend, System Design, and DevOps tracks.
 - `interview-questioner` — runs a live mock interview: one question at a time, waits for your answer, then gives feedback.
-Just ask for either by name — e.g. "use the interview-questioner agent for a system design mock interview." The `/interview-prep` and `/mock-interview` slash commands wrap these two flows.
+Just ask for either by name — e.g. "use the interview-questioner agent for a system design mock interview." The `/interview-prep` and `/mock-interview` slash commands wrap these two flows; in Codex, invoke the `$interview-prep` and `$mock-interview` skills.
 
 ## Non-negotiables
 - Never commit secrets, API keys, or .env files. Use environment variables or GCP Secret Manager.
